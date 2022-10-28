@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: steelblue;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.3s ease
+}
+
+.menu {
+    font-size: 1rem;
+    padding: 1rem;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.container.active .menu{
+    display: flex;
+    /* To display menu items in a column */
+    /* flex-direction: column;
+    justify-content: space-between;
+    height: 150px; */
+}
+
+.container.active .btn {
+    transform: translateX(175px);
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+    margin-left: 0.5rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.3rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin: 1rem 0;
+}
+
+.form-control {
+    position: relative;
+    margin: 1.3rem 0;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control input:valid + label span,
+.form-control input:focus + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 1.2rem;
+    min-width: 5px;
+    transition: 0.3s ease cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
